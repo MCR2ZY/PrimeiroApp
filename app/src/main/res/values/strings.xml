@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">MeuProjeto</string>
+    <string name="app_name">Sorteio</string>
+    <string name="text_main">Escolha um número de 0 a 5:</string>
+    <string name="text_result">Resultado</string>
+    <string name="button_main">Jogar</string>
+    <string name="textview_Player1">Jogador 01:</string>
+    <string name="textview_Player2">Jogador 02:</string>
 </resources>
