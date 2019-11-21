@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".GameActivity">
 
     <TextView
         android:id="@+id/textoPrincipal"
@@ -35,6 +35,7 @@
         android:layout_marginLeft="16dp"
         android:autofillHints=""
         android:ems="10"
+        android:hint="@string/hint_select_number"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/textViewPlayer1"
         app:layout_constraintStart_toEndOf="@+id/textViewPlayer1" />
@@ -47,15 +48,18 @@
         android:layout_marginRight="16dp"
         android:text="@string/textview_Player2"
         app:layout_constraintBottom_toBottomOf="@+id/editTextNumPlayer2"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumPlayer2" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumPlayer2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlayer1"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/editTextNumPlayer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="20dp"
         android:autofillHints=""
         android:ems="10"
+        android:hint="@string/hint_select_number"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="@+id/editTextNumPlayer1"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumPlayer1" />
@@ -69,16 +73,20 @@
         android:text="@string/button_main"
         app:layout_constraintBottom_toTopOf="@+id/textoResultado"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumPlayer2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textoResultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="95dp"
+        android:layout_width="333dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="72dp"
         android:text="@string/text_result"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumPlayer2" />
 

@@ -5,4 +5,8 @@
     <string name="button_main">Jogar</string>
     <string name="textview_Player1">Jogador 01:</string>
     <string name="textview_Player2">Jogador 02:</string>
+    <string name="button_one_player">Um Jogador</string>
+    <string name="button_two_players">Dois Jogadores</string>
+    <string name="text_view_tittle_game">Seu Sorteio</string>
+    <string name="hint_select_number">Escolha seu número</string>
 </resources>
